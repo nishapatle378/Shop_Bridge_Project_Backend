@@ -1,0 +1,28 @@
+### GET ALL PRODUCTS
+GET http://localhost:3000/api/products HTTP/1.1
+
+### GET SINGLE PRODUCT
+GET http://localhost:3000/api/products/6274acdb9cd706fe5690c841 HTTP/1.1
+
+### ADD ITEM
+POST http://localhost:3000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "productName": "Stylish Top",
+    "price": "Rs. 800",
+    "description": "Buy Girls Stylish Tops Online at Best Prices",
+    "image": "https://images.meesho.com/images/products/64220534/nbk1f_512.jpg"
+}
+
+### UPDATE ITEM
+PUT http://localhost:3000/api/products/6274acdb9cd706fe5690c841 HTTP/1.1
+Content-Type: application/json
+
+{
+    "productName": "Chiffon Leopard Shirt Print Long Puff Sleeve Patchwork Office Shirts"
+
+}
+
+### DELETE ITEM
+DELETE http://localhost:3000/api/products/6274acdb9cd706fe5690c841 HTTP/1.1
